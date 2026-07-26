@@ -77,9 +77,20 @@ const Login = () => {
               <LoginForm onSuccess={() => navigate("/dashboard")} />
             </div>
           </div>
-
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-obsidian-800/80 py-6 px-4 text-center text-xs text-zinc-500">
+        <a
+          href="https://digitalheroesco.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gold-400 hover:text-gold-300 transition-colors font-medium hover:underline"
+        >
+          Built for Digital Heroes Training Task
+        </a>
+      </footer>
     </div>
   );
 };

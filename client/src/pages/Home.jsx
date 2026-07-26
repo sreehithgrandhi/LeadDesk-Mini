@@ -297,21 +297,34 @@ const Home = () => {
 
       {/* FOOTER */}
       <footer className="border-t border-obsidian-800/80 bg-obsidian-950 py-10 px-4 lg:px-8 mt-24 text-xs text-zinc-500">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex flex-col gap-1">
-            <span className="font-heading text-sm font-bold text-white">LeadDesk Mini Agency</span>
-            <span className="text-zinc-400">High-Ticket Digital Products & Full-Stack Engineering</span>
+        <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
+          <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex flex-col gap-1">
+              <span className="font-heading text-sm font-bold text-white">LeadDesk Mini Agency</span>
+              <span className="text-zinc-400">High-Ticket Digital Products & Full-Stack Engineering</span>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-6 text-zinc-400">
+              <a href="#services" className="hover:text-gold-300 transition-colors">Services</a>
+              <a href="#process" className="hover:text-gold-300 transition-colors">Process</a>
+              <a href="#start-project" className="hover:text-gold-300 transition-colors">Get Proposal</a>
+              <Link to="/login" className="hover:text-gold-300 transition-colors text-zinc-500">Admin Portal</Link>
+            </div>
+
+            <div className="text-zinc-500 text-right">
+              © {new Date().getFullYear()} LeadDesk Mini. All rights reserved.
+            </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-6 text-zinc-400">
-            <a href="#services" className="hover:text-gold-300 transition-colors">Services</a>
-            <a href="#process" className="hover:text-gold-300 transition-colors">Process</a>
-            <a href="#start-project" className="hover:text-gold-300 transition-colors">Get Proposal</a>
-            <Link to="/login" className="hover:text-gold-300 transition-colors text-zinc-500">Admin Portal</Link>
-          </div>
-
-          <div className="text-zinc-500 text-right">
-            © {new Date().getFullYear()} LeadDesk Mini. All rights reserved.
+          <div className="pt-4 border-t border-obsidian-800/60 w-full text-center text-zinc-400">
+            <a
+              href="https://digitalheroesco.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-400 hover:text-gold-300 transition-colors font-medium hover:underline"
+            >
+              Built for Digital Heroes Training Task
+            </a>
           </div>
         </div>
       </footer>
